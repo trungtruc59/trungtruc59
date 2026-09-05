@@ -161,39 +161,61 @@ const createRepositoryActivitySvg = (repos) => {
   });
 };
 
+const fallbackDataset = () => ({
+  user: { followers: 0, following: 0 },
+  repos: [],
+  events: [],
+  stars: 0,
+  forks: 0,
+  contributions: monthBuckets([], 8),
+  topLanguages: [
+    { label: 'JavaScript', value: 0 },
+    { label: 'TypeScript', value: 0 },
+    { label: 'PHP', value: 0 },
+    { label: 'Vue', value: 0 },
+    { label: 'React', value: 0 }
+  ]
+});
+
 const renderMetrics = async () => {
   const client = createGitHubClient(process.env);
   const username = process.env.GITHUB_USERNAME;
 
   await mkdir(METRICS_DIR, { recursive: true });
 
-  const [user, repos, events] = await Promise.all([
-    client.getUser(),
-    client.getPublicRepos(),
-    client.getRecentEvents()
-  ]);
-
-  const stars = repos.reduce((sum, repo) => sum + Number(repo.stargazers_count || 0), 0);
-  const forks = repos.reduce((sum, repo) => sum + Number(repo.forks_count || 0), 0);
-  const contributions = monthBuckets(events, 8);
-  const topLanguages = await computeLanguageDistribution(client, repos);
+  let dataset;
+  try {
+    const [user, repos, events] = await Promise.all([
+      client.getUser(),
+      client.getPublicRepos(),
+      client.getRecentEvents()
+    ]);
+    const stars = repos.reduce((sum, repo) => sum + Number(repo.stargazers_count || 0), 0);
+    const forks = repos.reduce((sum, repo) => sum + Number(repo.forks_count || 0), 0);
+    const contributions = monthBuckets(events, 8);
+    const topLanguages = await computeLanguageDistribution(client, repos);
+    dataset = { user, repos, events, stars, forks, contributions, topLanguages };
+  } catch (error) {
+    process.stderr.write(`Warning: API unavailable, generating fallback metrics. ${error.message}\n`);
+    dataset = fallbackDataset();
+  }
 
   const files = [
-    ['github-stats.svg', createStatsSvg({ username, user, repos, stars, forks, events })],
-    ['languages.svg', createLanguagesSvg(topLanguages)],
-    ['activity.svg', createRepositoryActivitySvg(repos)],
-    ['contribution.svg', createActivitySvg(contributions)]
+    ['github-stats.svg', createStatsSvg({ username, user: dataset.user, repos: dataset.repos, stars: dataset.stars, forks: dataset.forks, events: dataset.events })],
+    ['languages.svg', createLanguagesSvg(dataset.topLanguages)],
+    ['activity.svg', createRepositoryActivitySvg(dataset.repos)],
+    ['contribution.svg', createActivitySvg(dataset.contributions)]
   ];
 
   await Promise.all(files.map(([name, svg]) => writeFile(path.join(METRICS_DIR, name), svg, 'utf8')));
 
   const summary = {
-    repositories: repos.length,
-    followers: user.followers || 0,
-    stars,
-    forks,
-    activityEvents: events.length,
-    totalLanguageBytes: sumObjectValues(Object.fromEntries(topLanguages.map((item) => [item.label, item.value])))
+    repositories: dataset.repos.length,
+    followers: dataset.user.followers || 0,
+    stars: dataset.stars,
+    forks: dataset.forks,
+    activityEvents: dataset.events.length,
+    totalLanguageSharePercent: sumObjectValues(Object.fromEntries(dataset.topLanguages.map((item) => [item.label, item.value])))
   };
 
   process.stdout.write(`Metrics generated for @${username}: ${JSON.stringify(summary)}\n`);

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub profile metric</title>
+  <desc id="desc">Automatically generated profile visual card.</desc>
+  <defs>
+    
+  <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#2ea043">
+      <animate attributeName="stop-color" values="#2ea043;#58a6ff;#2ea043" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="50%" stop-color="#58a6ff">
+      <animate attributeName="stop-color" values="#58a6ff;#8957e5;#58a6ff" dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#8957e5">
+      <animate attributeName="stop-color" values="#8957e5;#2ea043;#8957e5" dur="8s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+
+  </defs>
+  
+  <style>
+    :root { color-scheme: dark; }
+    .bg { fill: #0d1117; }
+    .muted { fill: #8b949e; }
+    .text { fill: #c9d1d9; }
+    .heading { fill: #f0f6fc; font-weight: 600; }
+    .accent { fill: #58a6ff; }
+    .soft { fill: #21262d; }
+    .bar-track { fill: #30363d; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .pulse { transform-origin: center; animation: pulse 4s ease-in-out infinite; }
+    .slide { animation: slide 10s linear infinite; }
+    .grow { animation: grow 1.2s ease-out; }
+    @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-160px); } }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .pulse, .slide, .grow { animation: none !important; }
+      animate { display: none; }
+    }
+  </style>
+
+  
+  <rect class="bg" x="0" y="0" width="680" height="300" rx="16" />
+  <rect x="1" y="1" width="678" height="298" rx="15" fill="none" stroke="#30363d" />
+  <text class="heading sans" x="24" y="36" font-size="20">Contribution Activity</text>
+  <text class="muted sans" x="24" y="58" font-size="13">Public events over recent months</text>
+  
+        <rect class="bar-track" x="24" y="92" width="36" height="150" rx="6" />
+        <rect x="24" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="42" y="258" text-anchor="middle" font-size="10">Feb</text>
+        <text class="text mono" x="42" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="74" y="92" width="36" height="150" rx="6" />
+        <rect x="74" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="92" y="258" text-anchor="middle" font-size="10">Mar</text>
+        <text class="text mono" x="92" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="124" y="92" width="36" height="150" rx="6" />
+        <rect x="124" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="142" y="258" text-anchor="middle" font-size="10">Apr</text>
+        <text class="text mono" x="142" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="174" y="92" width="36" height="150" rx="6" />
+        <rect x="174" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="192" y="258" text-anchor="middle" font-size="10">May</text>
+        <text class="text mono" x="192" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="224" y="92" width="36" height="150" rx="6" />
+        <rect x="224" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="242" y="258" text-anchor="middle" font-size="10">Jun</text>
+        <text class="text mono" x="242" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="274" y="92" width="36" height="150" rx="6" />
+        <rect x="274" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="292" y="258" text-anchor="middle" font-size="10">Jul</text>
+        <text class="text mono" x="292" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="324" y="92" width="36" height="150" rx="6" />
+        <rect x="324" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="342" y="258" text-anchor="middle" font-size="10">Aug</text>
+        <text class="text mono" x="342" y="232" text-anchor="middle" font-size="10">0</text>
+      
+        <rect class="bar-track" x="374" y="92" width="36" height="150" rx="6" />
+        <rect x="374" y="238" width="36" height="4" rx="6" fill="url(#accent-gradient)" class="pulse" />
+        <text class="muted mono" x="392" y="258" text-anchor="middle" font-size="10">Sep</text>
+        <text class="text mono" x="392" y="232" text-anchor="middle" font-size="10">0</text>
+      
+
+</svg>

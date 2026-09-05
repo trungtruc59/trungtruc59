@@ -43,7 +43,7 @@ export class GitHubApiClient {
       'User-Agent': `${this.username}-profile-readme-generator`
     };
     if (this.token) {
-      headers.Authorization = `******;
+      headers.Authorization = 'Bearer ' + this.token;
     }
     return headers;
   }
