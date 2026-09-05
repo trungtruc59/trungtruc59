@@ -60,6 +60,7 @@ A personal portfolio with a built-in admin CMS. I update profile, projects, skil
 - Supabase PostgreSQL (runtime pooler + direct URL for migrations)
 - Auth.js v5 — Google OAuth and a rotatable access-token login
 - Supabase Storage for images and CV files
+  
 **Architecture:**
 - Public routes: Home, About, Experience, Projects, Project detail, Contact.
 - Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
@@ -74,7 +75,8 @@ Developed an enterprise Machine Operation Management System for a steel manufact
 **Stack:**
 - Vue.js
 - SQL Server
-- .NET 
+- .NET
+  
 **Architecture:**
 Public routes: Home, About, Experience, Projects, Project detail, Contact.
 Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
@@ -87,6 +89,7 @@ Public reads go through cached server data helpers. Writes go through Server Act
 Contributed to a microservices-based sports booking and player-matching platform. Developed Booking Service and integrated APIs across web and mobile systems. Built React Native application architecture and implemented Home and Team features. Delivered responsive UI and dynamic data integration for web and mobile platforms.
 
 **Stack:** Java Spring Boot · Next.js 16 (App Router) and React 19 · PostgreSQL · React Native 
+
 **Architecture:** 
 - Integrated frontend components with backend services by implementing API consumption and data rendering for booking, team, and related functionalities.
 - Built the React Native application architecture, including project structure, navigation flow, reusable components, and core setup.
