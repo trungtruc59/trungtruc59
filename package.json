@@ -1,0 +1,11 @@
+{
+  "name": "trungtruc59-profile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dynamic GitHub profile README assets",
+  "type": "module",
+  "scripts": {
+    "metrics": "node scripts/render-metrics.js",
+    "profile": "node scripts/render-profile.js"
+  }
+}
