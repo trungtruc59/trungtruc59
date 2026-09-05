@@ -5,7 +5,7 @@
 Full-Stack Web Developer building scalable web applications and developer-focused products.
 
 **Focus:** Laravel · PHP · Next.js · Vue.js · React · Node.js  
-**Location:** YOUR_LOCATION
+**Location:** Vietnam
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/trungtruc59)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](https://www.linkedin.com/in/brian-nguyen-dev5920/)
@@ -14,7 +14,11 @@ Full-Stack Web Developer building scalable web applications and developer-focuse
 
 ## About Me
 
-I design and deliver production-grade web systems with a strong focus on performance, maintainability, and developer experience. I enjoy shipping practical products that combine clean architecture with measurable business impact.
+I am a passionate IT professional with extensive experience in software development, system architecture, and emerging technologies. With a strong foundation in programming languages/technologies, example: Php, Vue.js, React, I specialize in building scalable and efficient solutions that solve real-world problems.
+
+I thrive in dynamic environments, enjoy collaborating with cross-functional teams, and have a proven track record of delivering projects on time and exceeding expectations. My expertise spans full-stack development, enabling me to bridge the gap between business requirements and technical execution.
+
+Always eager to learn and adapt, I am committed to continuous improvement, exploring new technologies, and contributing to innovative IT projects that drive growth and transformation.
 
 ## Tech Stack
 
@@ -42,7 +46,6 @@ I design and deliver production-grade web systems with a strong focus on perform
 - Docker
 - GitHub Actions
 - Vercel
-- Linux
 
 ## GitHub Metrics
 
@@ -60,21 +63,45 @@ I design and deliver production-grade web systems with a strong focus on perform
 
 ## Featured Projects
 
-### PROJECT_NAME_1
+### MyResume — Personal Portfolio CMS
 
-Short description of what this project solves and why it matters.
+A personal portfolio with a built-in admin CMS. I update profile, projects, skills, and SEO from the dashboard — no redeploy required.
 
-**Stack:** Next.js · TypeScript · PostgreSQL · Docker  
-**Architecture:** Modular services, cache-first reads, background job processing  
-[Repository](https://github.com/YOUR_GITHUB_USERNAME/PROJECT_REPO_1) · [Live Demo](YOUR_PROJECT_DEMO_1)
+**Stack:**
+• Next.js 16 (App Router) and React 19
+• Tailwind CSS 4
+• Prisma 7 with a PostgreSQL driver adapter
+• Supabase PostgreSQL (runtime pooler + direct URL for migrations)
+• Auth.js v5 — Google OAuth and a rotatable access-token login
+• Supabase Storage for images and CV files
+• TipTap for rich text (projects, timelines, blog drafts)
+• Embla Carousel, AOS, and a typed hero on the public site
+**Architecture:**
+Public routes: Home, About, Experience, Projects, Project detail, Contact.
+Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
+Core models include User and Profile, Project (linked to Skill), Experience, Education, Post (with tags and SEO fields), Media, Contact messages, and SiteSettings. Most records support soft delete so unique slugs stay intact after a delete.
+Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
+[Repository](https://gitlab.com/react-v-nextjs/myresume) · [Live Demo](https://nttdev.cloud/)
 
 ### PROJECT_NAME_2
 
 Short description focused on product value and engineering challenge.
 
-**Stack:** Laravel · PHP · MySQL · Redis  
-**Architecture:** Clean domain boundaries, queue-based workflows, resilient API integration  
-[Repository](https://github.com/YOUR_GITHUB_USERNAME/PROJECT_REPO_2) · [Live Demo](YOUR_PROJECT_DEMO_2)
+**Stack:**
+• Next.js 16 (App Router) and React 19
+• Tailwind CSS 4
+• Prisma 7 with a PostgreSQL driver adapter
+• Supabase PostgreSQL (runtime pooler + direct URL for migrations)
+• Auth.js v5 — Google OAuth and a rotatable access-token login
+• Supabase Storage for images and CV files
+• TipTap for rich text (projects, timelines, blog drafts)
+• Embla Carousel, AOS, and a typed hero on the public site
+**Architecture:**
+Public routes: Home, About, Experience, Projects, Project detail, Contact.
+Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
+Core models include User and Profile, Project (linked to Skill), Experience, Education, Post (with tags and SEO fields), Media, Contact messages, and SiteSettings. Most records support soft delete so unique slugs stay intact after a delete.
+Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
+[Repository](https://gitlab.com/react-v-nextjs/myresume) · [Live Demo](https://nttdev.cloud/)
 
 ### PROJECT_NAME_3
 
