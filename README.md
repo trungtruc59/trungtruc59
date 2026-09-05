@@ -1,6 +1,6 @@
-# Hi, I'm Nguyen Trung Truc 👋
-
 <img src="./assets/banners/header.svg" alt="Full-Stack Engineer banner" />
+
+# Hi, I'm Nguyen Trung Truc 👋
 
 Full-Stack Web Developer building scalable web applications and developer-focused products.
 
@@ -78,11 +78,12 @@ Developed an enterprise Machine Operation Management System for a steel manufact
 - .NET
   
 **Architecture:**
-Public routes: Home, About, Experience, Projects, Project detail, Contact.
-Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
-Core models include User and Profile, Project (linked to Skill), Experience, Education, Post (with tags and SEO fields), Media, Contact messages, and SiteSettings. Most records support soft delete so unique slugs stay intact after a delete.
-Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
-[Repository](https://gitlab.com/react-v-nextjs/myresume) · [Live Demo](https://nttdev.cloud/)
+
+- Developed an enterprise machine operation management system to automate packaging workflow processes and improve operational efficiency.
+- Implemented secure authentication, authorization, and RBAC modules integrated with .NET REST APIs.
+- Built employee and machine management modules supporting dynamic parameter input and automated remote SQL Server data retrieval.
+- Configured Vue Router and Pinia for scalable frontend routing and centralized state management.
+- Optimized remote database connectivity and API communication to ensure secure and stable enterprise deployment.
 
 ### Matchix – Sports Booking & Community Platform
 
