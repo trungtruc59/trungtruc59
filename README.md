@@ -123,51 +123,10 @@ Contributed to a microservices-based sports booking and player-matching platform
 - Performance profiling and optimization patterns
 - Security-first engineering practices for web applications
 
-## Development Philosophy
-
-Build with clarity, ship with discipline, and optimize with real data.
-
-## Developer Animation
-
-<img src="./assets/animations/coding.svg" alt="Coding animation" />
-
-<img src="./assets/animations/terminal.gif" alt="Terminal deployment animation placeholder" />
-
-> `terminal.gif` is a lightweight placeholder. Replace it with your own optimized terminal animation (copyright-safe) when ready.
-
 ## Connect
 
-- GitHub: [github.com/YOUR_GITHUB_USERNAME](https://github.com/trungtruc59)
-- LinkedIn: [YOUR_LINKEDIN](https://www.linkedin.com/in/brian-nguyen-dev5920/)
-- Portfolio: [YOUR_PORTFOLIO](https://nttdev.cloud/)
-- Email: [YOUR_EMAIL](mailto:trungtruc.dev@gmail.com)
+- GitHub: [github.com/trungtruc59](https://github.com/trungtruc59)
+- LinkedIn: [Nguyễn Trung Trực](https://www.linkedin.com/in/brian-nguyen-dev5920/)
+- Portfolio: [Nguyễn Trung Trực](https://nttdev.cloud/)
+- Email: [Nguyễn Trung Trực](mailto:trungtruc.dev@gmail.com)
 
----
-
-## Automation & Customization
-
-### How it works
-
-- `npm run profile` generates visual assets in `assets/banners` and `assets/animations`.
-- `npm run metrics` fetches GitHub data using the REST API and generates SVG cards in `assets/metrics`.
-- `.github/workflows/update-readme.yml` runs on schedule and manual dispatch, then commits refreshed assets.
-
-### Required GitHub configuration
-
-1. Set repository variable `GITHUB_USERNAME` to your GitHub username.
-2. Ensure Actions are enabled; workflow uses built-in `GITHUB_TOKEN` with `contents: write`.
-
-### Local commands
-
-```bash
-npm install
-npm run profile
-GITHUB_USERNAME=YOUR_GITHUB_USERNAME npm run metrics
-```
-
-### Customization points
-
-- Update profile links/placeholders directly in `README.md`.
-- Adjust colors and animation behavior in `scripts/utils/svg.js` and `scripts/render-profile.js`.
-- Tune metrics card layout in `scripts/render-metrics.js`.
-- Replace `assets/animations/terminal.gif` with your own optimized GIF.
