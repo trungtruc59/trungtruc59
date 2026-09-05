@@ -47,20 +47,6 @@ Always eager to learn and adapt, I am committed to continuous improvement, explo
 - GitHub Actions
 - Vercel
 
-## GitHub Metrics
-
-<img src="./assets/metrics/github-stats.svg" alt="GitHub statistics" />
-
-<img src="./assets/metrics/languages.svg" alt="Top languages chart" />
-
-<img src="./assets/metrics/activity.svg" alt="Repository activity" />
-
-<img src="./assets/metrics/contribution.svg" alt="Contribution activity by month" />
-
-## Contribution Activity
-
-<img src="./assets/animations/activity.svg" alt="Animated development activity" />
-
 ## Featured Projects
 
 ### MyResume — Personal Portfolio CMS
@@ -68,34 +54,27 @@ Always eager to learn and adapt, I am committed to continuous improvement, explo
 A personal portfolio with a built-in admin CMS. I update profile, projects, skills, and SEO from the dashboard — no redeploy required.
 
 **Stack:**
-• Next.js 16 (App Router) and React 19
-• Tailwind CSS 4
-• Prisma 7 with a PostgreSQL driver adapter
-• Supabase PostgreSQL (runtime pooler + direct URL for migrations)
-• Auth.js v5 — Google OAuth and a rotatable access-token login
-• Supabase Storage for images and CV files
-• TipTap for rich text (projects, timelines, blog drafts)
-• Embla Carousel, AOS, and a typed hero on the public site
+- Next.js 16 (App Router) and React 19
+- Tailwind CSS 4
+- Prisma 7 with a PostgreSQL driver adapter
+- Supabase PostgreSQL (runtime pooler + direct URL for migrations)
+- Auth.js v5 — Google OAuth and a rotatable access-token login
+- Supabase Storage for images and CV files
 **Architecture:**
-Public routes: Home, About, Experience, Projects, Project detail, Contact.
-Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
-Core models include User and Profile, Project (linked to Skill), Experience, Education, Post (with tags and SEO fields), Media, Contact messages, and SiteSettings. Most records support soft delete so unique slugs stay intact after a delete.
-Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
+- Public routes: Home, About, Experience, Projects, Project detail, Contact.
+- Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
+- Core models include User and Profile, Project (linked to Skill), Experience, Education, Post (with tags and SEO fields), Media, Contact messages, and SiteSettings. Most records support soft delete so unique slugs stay intact after a delete.
+- Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
 [Repository](https://gitlab.com/react-v-nextjs/myresume) · [Live Demo](https://nttdev.cloud/)
 
-### PROJECT_NAME_2
+### Machine Operation Management Website – SGC (Steel Company)
 
-Short description focused on product value and engineering challenge.
+Developed an enterprise Machine Operation Management System for a steel manufacturing company to automate machine operation and packaging workflows. Implemented secure authentication, authorization, and RBAC with .NET REST APIs. Built employee and machine management modules with dynamic parameter configuration and automated SQL Server data retrieval. Applied Vue Router and Pinia for scalable routing and centralized state management, while optimizing API and remote database communication for stable enterprise deployment.
 
 **Stack:**
-• Next.js 16 (App Router) and React 19
-• Tailwind CSS 4
-• Prisma 7 with a PostgreSQL driver adapter
-• Supabase PostgreSQL (runtime pooler + direct URL for migrations)
-• Auth.js v5 — Google OAuth and a rotatable access-token login
-• Supabase Storage for images and CV files
-• TipTap for rich text (projects, timelines, blog drafts)
-• Embla Carousel, AOS, and a typed hero on the public site
+- Vue.js
+- SQL Server
+- .NET 
 **Architecture:**
 Public routes: Home, About, Experience, Projects, Project detail, Contact.
 Admin modules: Profile, Projects, Experience, Education, Skills, Blog, Gallery, Settings.
@@ -103,13 +82,18 @@ Core models include User and Profile, Project (linked to Skill), Experience, Edu
 Public reads go through cached server data helpers. Writes go through Server Actions that require an admin session.
 [Repository](https://gitlab.com/react-v-nextjs/myresume) · [Live Demo](https://nttdev.cloud/)
 
-### PROJECT_NAME_3
+### Matchix – Sports Booking & Community Platform
 
-Short description focused on scale, performance, or developer tooling.
+Contributed to a microservices-based sports booking and player-matching platform. Developed Booking Service and integrated APIs across web and mobile systems. Built React Native application architecture and implemented Home and Team features. Delivered responsive UI and dynamic data integration for web and mobile platforms.
 
-**Stack:** React · Node.js · MongoDB · GitHub Actions  
-**Architecture:** CI-driven delivery, observability-first design, horizontal scalability  
-[Repository](https://github.com/YOUR_GITHUB_USERNAME/PROJECT_REPO_3) · [Live Demo](YOUR_PROJECT_DEMO_3)
+**Stack:** Java Spring Boot · Next.js 16 (App Router) and React 19 · PostgreSQL · React Native 
+**Architecture:** 
+- Integrated frontend components with backend services by implementing API consumption and data rendering for booking, team, and related functionalities.
+- Built the React Native application architecture, including project structure, navigation flow, reusable components, and core setup.
+- Developed the Home screen on the mobile application with dynamic content integration.
+- Implemented the Team Matching feature on the mobile application, enabling users to create and discover team recruitment posts.
+  
+[Repository](https://gitlab.com/trungtruc59/matchix-app) · [Live Demo](https://matchix.cloud/)
 
 ## Engineering Focus
 
@@ -150,10 +134,10 @@ Build with clarity, ship with discipline, and optimize with real data.
 
 ## Connect
 
-- GitHub: [github.com/YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)
-- LinkedIn: [YOUR_LINKEDIN](YOUR_LINKEDIN)
-- Portfolio: [YOUR_PORTFOLIO](YOUR_PORTFOLIO)
-- Email: [YOUR_EMAIL](mailto:YOUR_EMAIL)
+- GitHub: [github.com/YOUR_GITHUB_USERNAME](https://github.com/trungtruc59)
+- LinkedIn: [YOUR_LINKEDIN](https://www.linkedin.com/in/brian-nguyen-dev5920/)
+- Portfolio: [YOUR_PORTFOLIO](https://nttdev.cloud/)
+- Email: [YOUR_EMAIL](mailto:trungtruc.dev@gmail.com)
 
 ---
 
