@@ -1,4 +1,4 @@
-# Hi, I'm YOUR_NAME 👋
+# Hi, I'm Nguyen Trung Truc 👋
 
 <img src="./assets/banners/header.svg" alt="Full-Stack Engineer banner" />
 
@@ -7,9 +7,9 @@ Full-Stack Web Developer building scalable web applications and developer-focuse
 **Focus:** Laravel · PHP · Next.js · Vue.js · React · Node.js  
 **Location:** YOUR_LOCATION
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/YOUR_GITHUB_USERNAME)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](YOUR_LINKEDIN)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0f766e)](YOUR_PORTFOLIO)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?logo=github)](https://github.com/trungtruc59)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin)](https://www.linkedin.com/in/brian-nguyen-dev5920/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-0f766e)](https://nttdev.cloud/)
 [![Followers](https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Followers&style=social)](https://github.com/YOUR_GITHUB_USERNAME)
 
 ## About Me
